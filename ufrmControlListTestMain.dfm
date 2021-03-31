@@ -2,7 +2,7 @@ object frmControlListTestMain: TfrmControlListTestMain
   Left = 0
   Top = 0
   Caption = 'Control List Test'
-  ClientHeight = 469
+  ClientHeight = 376
   ClientWidth = 656
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,17 +15,36 @@ object frmControlListTestMain: TfrmControlListTestMain
   TextHeight = 13
   object pnlBottom: TPanel
     Left = 0
-    Top = 408
+    Top = 315
     Width = 656
     Height = 61
     Align = alBottom
     TabOrder = 0
+    ExplicitTop = 408
+    object Label5: TLabel
+      Left = 23
+      Top = 19
+      Width = 59
+      Height = 13
+      Caption = 'Row Height:'
+    end
+    object edtRowHeight: TNumberBox
+      Left = 88
+      Top = 16
+      Width = 77
+      Height = 21
+      MinValue = 30.000000000000000000
+      MaxValue = 200.000000000000000000
+      TabOrder = 0
+      Value = 70.000000000000000000
+      UseMouseWheel = True
+    end
   end
   object ControlList1: TControlList
     Left = 0
     Top = 0
     Width = 656
-    Height = 408
+    Height = 315
     Align = alClient
     ItemCount = 200
     ItemIndex = 0
@@ -35,6 +54,7 @@ object frmControlListTestMain: TfrmControlListTestMain
     ItemMargins.Bottom = 0
     ParentColor = False
     TabOrder = 1
+    ExplicitHeight = 408
     object Label1: TLabel
       Left = 56
       Top = 10
@@ -127,6 +147,12 @@ object frmControlListTestMain: TfrmControlListTestMain
       DataSource = PrototypeBindSource1
       GridControl = ControlList1
       Columns = <>
+    end
+    object LinkControlToPropertyItemHeight: TLinkControlToProperty
+      Control = edtRowHeight
+      Track = True
+      Component = ControlList1
+      ComponentProperty = 'ItemHeight'
     end
   end
   object PrototypeBindSource1: TPrototypeBindSource

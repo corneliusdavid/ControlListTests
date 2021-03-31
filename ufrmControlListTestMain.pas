@@ -8,7 +8,8 @@ uses
   Vcl.Bind.DBEngExt, Data.Bind.EngExt, System.Rtti, System.Bindings.Outputs, Vcl.Bind.Editors,
   Data.Bind.Components, FireDAC.Comp.Client, FireDAC.Comp.DataSet,
   Vcl.StdCtrls, Vcl.ControlList, Vcl.Bind.ControlList,
-  Data.Bind.Grid, Data.Bind.GenData, Data.Bind.ObjectScope;
+  Data.Bind.Grid, Data.Bind.GenData, Data.Bind.ObjectScope,
+  Vcl.Samples.Bind.Editors, Vcl.Samples.Spin, Vcl.NumberBox;
 
 type
   TfrmControlListTestMain = class(TForm)
@@ -25,6 +26,9 @@ type
     LinkPropertyToFieldCaption3: TLinkPropertyToField;
     LinkPropertyToFieldCaption4: TLinkPropertyToField;
     LinkGridToDataSourcePrototypeBindSource1: TLinkGridToDataSource;
+    Label5: TLabel;
+    edtRowHeight: TNumberBox;
+    LinkControlToPropertyItemHeight: TLinkControlToProperty;
   private
     { Private declarations }
   public
