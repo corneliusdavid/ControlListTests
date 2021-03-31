@@ -2,71 +2,32 @@
 Coordinates=710,110,65,33
 Visible=False
 
-[FDTable1]
-Visible=False
-Coordinates=19,361,60,33
-
-[FDTable1DEPT_NO]
-Coordinates=216,78,109,33
-
-[FDTable1FIRST_NAME]
-Coordinates=216,133,126,33
-
-[BindSourceDB1]
-Coordinates=143,10,92,267
-
-[FDTable1LAST_NAME]
-Coordinates=216,188,123,33
-
-[FDTable1JOB_COUNTRY]
-Coordinates=216,243,138,33
-
-[FDTable1HIRE_DATE]
-Coordinates=216,298,119,33
-
-[FDConnection1]
-Coordinates=197,342,90,33
-
 [BindingsList1]
 Coordinates=98,342,82,33
 
-[FDTable1JOB_GRADE]
-Coordinates=420,1,124,33
-
-[FDTable1SALARY]
-Coordinates=420,56,103,33
-
-[FDTable1PHONE_EXT]
-Coordinates=420,111,123,33
-
 [Label1]
-Coordinates=40,270,46,51
-
-[FDTable1FULL_NAME]
-Coordinates=420,166,123,33
+Coordinates=350,120,46,51
 
 [ControlList1]
-Coordinates=330,10,74,69
+Coordinates=340,30,74,69
 Visible=True
 ExplicitSubNodes=ItemHeight
-
-[FDTable1EMP_NO]
-Coordinates=420,221,104,33
-
-[FDTable1JOB_CODE]
-Coordinates=420,276,117,33
 
 [Label2]
 Coordinates=40,40,46,51
 Visible=True
 
 [Label3]
-Coordinates=40,210,46,51
+Coordinates=50,170,46,51
 
 []
-Coordinates=80,1,53,36
+Coordinates=143,10,106,300
 Visible=False
 
 [Label4]
 Coordinates=40,110,46,51
+
+[PrototypeBindSource1]
+Coordinates=160,80,125,141
+Visible=True
 
