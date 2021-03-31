@@ -9,26 +9,27 @@ uses
   Data.Bind.Components, FireDAC.Comp.Client, FireDAC.Comp.DataSet,
   Vcl.StdCtrls, Vcl.ControlList, Vcl.Bind.ControlList,
   Data.Bind.Grid, Data.Bind.GenData, Data.Bind.ObjectScope,
-  Vcl.Samples.Bind.Editors, Vcl.Samples.Spin, Vcl.NumberBox;
+  Vcl.Samples.Bind.Editors, Vcl.Samples.Spin, Vcl.NumberBox,
+  Vcl.Imaging.pngimage;
 
 type
   TfrmControlListTestMain = class(TForm)
     pnlBottom: TPanel;
     ControlList1: TControlList;
-    Label1: TLabel;
     BindingsList1: TBindingsList;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
     PrototypeBindSource1: TPrototypeBindSource;
-    LinkPropertyToFieldCaption: TLinkPropertyToField;
-    LinkPropertyToFieldCaption2: TLinkPropertyToField;
-    LinkPropertyToFieldCaption3: TLinkPropertyToField;
-    LinkPropertyToFieldCaption4: TLinkPropertyToField;
     LinkGridToDataSourcePrototypeBindSource1: TLinkGridToDataSource;
     Label5: TLabel;
     edtRowHeight: TNumberBox;
     LinkControlToPropertyItemHeight: TLinkControlToProperty;
+    Label1: TLabel;
+    Label2: TLabel;
+    LinkPropertyToFieldCaption5: TLinkPropertyToField;
+    LinkPropertyToFieldCaption6: TLinkPropertyToField;
+    Label3: TLabel;
+    LinkPropertyToFieldCaption7: TLinkPropertyToField;
+    Image1: TImage;
+    LinkControlToField1: TLinkControlToField;
   private
     { Private declarations }
   public

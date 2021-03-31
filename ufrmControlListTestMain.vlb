@@ -5,28 +5,15 @@ Visible=False
 [BindingsList1]
 Coordinates=98,342,82,33
 
-[Label1]
-Coordinates=360,80,46,51
-
 [ControlList1]
 Coordinates=350,0,74,69
 Visible=True
 ExplicitSubNodes=ItemHeight
 
-[Label2]
-Coordinates=40,10,46,51
-Visible=True
-
-[Label3]
-Coordinates=40,150,46,51
-
 []
-Coordinates=313,190,78,51
+Coordinates=40,140,81,33
 Visible=True
 ExplicitSubNodes=Position
-
-[Label4]
-Coordinates=30,80,46,51
 
 [PrototypeBindSource1]
 Coordinates=150,10,125,141
@@ -38,4 +25,16 @@ Visible=False
 
 [edtRowHeight]
 Coordinates=480,0,83,51
+
+[Label2]
+Coordinates=65,1,46,51
+
+[Label1]
+Coordinates=50,60,46,51
+
+[Label3]
+Coordinates=350,100,46,51
+
+[Image1]
+Coordinates=50,130,49,51
 
