@@ -55,7 +55,7 @@ object frmControlListTestMain: TfrmControlListTestMain
       Height = 16
       Alignment = taRightJustify
       AutoSize = False
-      Caption = '67'
+      Caption = '67: '
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -64,13 +64,13 @@ object frmControlListTestMain: TfrmControlListTestMain
       ParentFont = False
     end
     object Label3: TLabel
-      Left = 599
+      Left = 526
       Top = 13
-      Width = 14
+      Width = 87
       Height = 16
       Alignment = taRightJustify
       Anchors = [akTop, akRight]
-      Caption = '67'
+      Caption = 'Salary: $67000'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -81,9 +81,9 @@ object frmControlListTestMain: TfrmControlListTestMain
     object Label4: TLabel
       Left = 56
       Top = 35
-      Width = 50
+      Width = 127
       Height = 13
-      Caption = '11/1/2021'
+      Caption = 'Hired: November 01, 2021'
     end
   end
   object BindingsList1: TBindingsList
@@ -96,6 +96,7 @@ object frmControlListTestMain: TfrmControlListTestMain
       DataSource = PrototypeBindSource1
       FieldName = 'UserID'
       Component = Label2
+      CustomFormat = '%s + '#39': '#39
       ComponentProperty = 'Caption'
     end
     object LinkPropertyToFieldCaption2: TLinkPropertyToField
@@ -103,6 +104,7 @@ object frmControlListTestMain: TfrmControlListTestMain
       DataSource = PrototypeBindSource1
       FieldName = 'Salary'
       Component = Label3
+      CustomFormat = #39'Salary: $'#39' + %s * 1000'
       ComponentProperty = 'Caption'
     end
     object LinkPropertyToFieldCaption3: TLinkPropertyToField
@@ -117,6 +119,7 @@ object frmControlListTestMain: TfrmControlListTestMain
       DataSource = PrototypeBindSource1
       FieldName = 'HireDate'
       Component = Label4
+      CustomFormat = #39'Hired: '#39' + FormatDateTime('#39'mmmm dd, yyyy'#39', %s)'
       ComponentProperty = 'Caption'
     end
     object LinkGridToDataSourcePrototypeBindSource1: TLinkGridToDataSource

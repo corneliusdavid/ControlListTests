@@ -9,7 +9,7 @@ Coordinates=98,342,82,33
 Coordinates=350,120,46,51
 
 [ControlList1]
-Coordinates=340,30,74,69
+Coordinates=350,0,74,69
 Visible=True
 ExplicitSubNodes=ItemHeight
 
@@ -18,7 +18,7 @@ Coordinates=40,40,46,51
 Visible=True
 
 [Label3]
-Coordinates=50,170,46,51
+Coordinates=40,180,46,51
 
 []
 Coordinates=143,10,106,300
@@ -28,6 +28,6 @@ Visible=False
 Coordinates=40,110,46,51
 
 [PrototypeBindSource1]
-Coordinates=160,80,125,141
+Coordinates=150,20,125,141
 Visible=True
 
