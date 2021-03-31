@@ -3,7 +3,7 @@ object frmControlListTestMain: TfrmControlListTestMain
   Top = 0
   Caption = 'Control List Test'
   ClientHeight = 469
-  ClientWidth = 806
+  ClientWidth = 656
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,15 +16,16 @@ object frmControlListTestMain: TfrmControlListTestMain
   object pnlBottom: TPanel
     Left = 0
     Top = 408
-    Width = 806
+    Width = 656
     Height = 61
     Align = alBottom
     TabOrder = 0
+    ExplicitWidth = 806
   end
   object ControlList1: TControlList
     Left = 0
     Top = 0
-    Width = 806
+    Width = 656
     Height = 408
     Align = alClient
     ItemCount = 42
@@ -35,6 +36,7 @@ object frmControlListTestMain: TfrmControlListTestMain
     ItemMargins.Bottom = 0
     ParentColor = False
     TabOrder = 1
+    ExplicitWidth = 806
     object Label1: TLabel
       Left = 56
       Top = 10
@@ -64,24 +66,37 @@ object frmControlListTestMain: TfrmControlListTestMain
       ParentFont = False
     end
     object Label3: TLabel
-      Left = 681
+      Left = 497
       Top = 13
-      Width = 94
+      Width = 116
       Height = 16
       Alignment = taRightJustify
-      Caption = 'Salary: $105900'
+      Anchors = [akTop, akRight]
+      Caption = 'Salary: $105,900.00'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
+      ExplicitLeft = 659
+    end
+    object Label4: TLabel
+      Left = 56
+      Top = 35
+      Width = 99
+      Height = 13
+      Caption = 'Started: 12/29/2007'
     end
   end
   object FDTable1: TFDTable
     Active = True
     IndexFieldNames = 'EMP_NO'
     Connection = FDConnection1
+    FetchOptions.AssignedValues = [evItems, evCursorKind]
+    FetchOptions.CursorKind = ckStatic
+    UpdateOptions.AssignedValues = [uvEDelete, uvEInsert, uvEUpdate, uvUpdateChngFields, uvUpdateMode, uvRefreshMode]
+    UpdateOptions.UpdateChangedFields = False
     TableName = 'EMPLOYEE'
     Left = 112
     Top = 288
@@ -140,6 +155,7 @@ object frmControlListTestMain: TfrmControlListTestMain
       FieldName = 'SALARY'
       Origin = 'SALARY'
       Required = True
+      DisplayFormat = '$,0.00'
       Precision = 18
       Size = 2
     end
@@ -190,7 +206,14 @@ object frmControlListTestMain: TfrmControlListTestMain
       DataSource = BindSourceDB1
       FieldName = 'SALARY'
       Component = Label3
-      CustomFormat = #39'Salary: $'#39' + %s'
+      CustomFormat = #39'Salary: '#39' + %s'
+      ComponentProperty = 'Caption'
+    end
+    object LinkPropertyToFieldHIRE_DATE: TLinkPropertyToField
+      DataSource = BindSourceDB1
+      FieldName = 'HIRE_DATE'
+      Component = Label4
+      CustomFormat = #39'Started: '#39' + %s'
       ComponentProperty = 'Caption'
     end
   end

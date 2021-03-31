@@ -40,6 +40,8 @@ type
     LinkPropertyToFieldCaption: TLinkPropertyToField;
     Label3: TLabel;
     LinkPropertyToFieldCaption2: TLinkPropertyToField;
+    Label4: TLabel;
+    LinkPropertyToFieldHIRE_DATE: TLinkPropertyToField;
   private
     { Private declarations }
   public

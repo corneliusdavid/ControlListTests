@@ -40,7 +40,7 @@ Coordinates=420,56,103,33
 Coordinates=420,111,123,33
 
 [Label1]
-Coordinates=40,280,46,51
+Coordinates=40,270,46,51
 
 [FDTable1FULL_NAME]
 Coordinates=420,166,123,33
@@ -66,4 +66,7 @@ Coordinates=40,210,46,51
 []
 Coordinates=80,1,53,36
 Visible=False
+
+[Label4]
+Coordinates=40,110,46,51
 
